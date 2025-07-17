@@ -57,5 +57,5 @@ jobs:
         with:
           app-name: 'NySun'
           slot-name: 'Production'
-          package: .
+          package: './build'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_56E6A2A92B88415FBF753BD17D94A321 }}
