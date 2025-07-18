@@ -1,8 +1,11 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Footer from './Component/Footer';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('Footer', () => {
+  test('renders the copyright text', () => {
+    render(<Footer />);
+    expect(
+      screen.getByText(/© 2022 The New York Sun Company, LLC. All Rights Reserved./i)
+    ).toBeInTheDocument();
+  });
 });
