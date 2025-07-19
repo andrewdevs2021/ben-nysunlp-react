@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "Copy-Item -Path public\\web.config -Destination build\\web.config; Copy-Item -Path public\\routes.json -Destination build\\routes.json",
+    "postbuild": "cp public/web.config build/web.config && cp public/routes.json build/routes.json",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
